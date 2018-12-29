@@ -1,0 +1,64 @@
+baseurl = "http://localhost:8080"
+title = "glukoo.si"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+    author = "Aleksi Seppänen"
+    info = "aleksi@seppanen.me"
+    description = "aleksi@seppanen.me"
+    keywords = ""
+    avatarurl = "images/pic.jpg"
+
+    favicon_16 = "images/favicon16.png"
+    favicon_32 = "images/favicon32.png"
+
+    hidecredits = true
+    hidecopyright = true
+
+    rtl = false
+
+    math = true
+    custom_css = ["css/custom.css"]
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/Glukoosi/"
+[[params.social]]
+    name = "Gogs"
+    icon = "fas fa-code-branch fa-2x"
+    weight = 2
+    url = "https://gogs.glukoo.si/Glukoosi"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 3
+    url = "https://www.linkedin.com/in/aleksiseppanen/"
+[[params.social]]
+    name = "Telegram"
+    icon = "fab fa-telegram fa-2x"
+    weight = 3
+    url = "https://t.me/Glukoosi"
+[[params.social]]
+    name = "IRC"
+    icon = "fas fa-hashtag a-2x"
+    weight = 4
+    url = "irc://Glukoosi@IRCnet"
+
+
+# Menu links
+[[menu.main]]
+    name = "About"
+    weight = 1
+    url = "/about/"
