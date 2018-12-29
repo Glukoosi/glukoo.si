@@ -11,7 +11,7 @@ RUN dpkg -i /tmp/hugo.deb \
 RUN mkdir /usr/share/blog
 WORKDIR /usr/share/blog
 
-ADD ./site /usr/share/blog
+ADD ${PATH_TO_ROOT}/site /usr/share/blog
 RUN hugo
 
 FROM nginx
