@@ -1,12 +1,10 @@
 version: '3'
 
 services:
-  hugo-nginx:
+  hugo-httpd:
     build: .
     container_name: hugo-nginx
     ports:
      - "8080:80"
-    environment:
-     - PATH_TO_ROOT=.
     restart: always
 
