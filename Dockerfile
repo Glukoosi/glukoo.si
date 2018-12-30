@@ -8,11 +8,11 @@ ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINA
 RUN dpkg -i /tmp/hugo.deb \
 && rm /tmp/hugo.deb
 
-RUN mkdir /usr/share/blog
-WORKDIR /usr/share/blog
+RUN mkdir /usr/share/site
+WORKDIR /usr/share/site
 
-ADD ./site /usr/share/blog
+ADD ./site /usr/share/site
 RUN hugo
 
-FROM httpd:2.4
-COPY --from=builder /usr/share/blog/public /usr/local/apache2/htdocs/
+FROM nginx as prod
+COPY --from=builder /usr/share/site/public /usr/share/nginx/html

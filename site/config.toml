@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://glukoo.si"
 title = "glukoo.si"
 theme = "hugo-coder"
 languagecode = "en"

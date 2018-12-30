@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  hugo:
+    build:
+      context: .
+      target: prod
+    container_name: hugo_nginx
+    expose:
+     - "80"
+    environment:
+     - VIRTUAL_HOST=glukoo.si
+     - LETSENCRYPT_HOST=glukoo.si
+     - LETSENCRYPT_EMAIL=aleksi@seppanen.me
+    restart: always
+
+anetworks:
+  default:
+    external:
+      name: nginx-proxy
