@@ -14,7 +14,7 @@ services:
      - LETSENCRYPT_EMAIL=aleksi@seppanen.me
     restart: always
 
-anetworks:
+networks:
   default:
     external:
       name: nginx-proxy
