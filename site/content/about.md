@@ -2,4 +2,4 @@
 title = "About"
 +++
 
-I'm searching for a job. If you know where to find one, please contact [aleksi@seppanen.me](mailto:aleksi@seppanen.me).
+Military service 2018-07-09 ->
