@@ -6,15 +6,16 @@ services:
       context: .
       target: prod
     container_name: hugo_nginx
-    expose:
-     - "80"
-    environment:
-     - VIRTUAL_HOST=glukoo.si
-     - LETSENCRYPT_HOST=glukoo.si
-     - LETSENCRYPT_EMAIL=aleksi@seppanen.me
+    networks:
+     - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.backend=hugo_nginx"
+      - "traefik.docker.network=web"
+      - "traefik.frontend.rule=Host:glukoo.si"
+      - "traefik.port=80"
     restart: always
 
 networks:
-  default:
-    external:
-      name: nginx-proxy
+  web:
+    external: true
