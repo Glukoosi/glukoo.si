@@ -2,4 +2,4 @@
 title = "About"
 +++
 
-Military service 2018-07-09 ->
+Trainee at F-secure 2019-05-01 ->
