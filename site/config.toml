@@ -13,8 +13,8 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Aleksi Seppänen"
-    info = "aleksi@seppanen.me"
-    description = "aleksi@seppanen.me"
+    info = "aleksi@seppanen.dev"
+    description = "aleksi@seppanen.dev"
     keywords = ""
     avatarurl = "images/pic.jpg"
 
@@ -35,11 +35,6 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-github fa-2x"
     weight = 1
     url = "https://github.com/Glukoosi/"
-[[params.social]]
-    name = "Gogs"
-    icon = "fas fa-code-branch fa-2x"
-    weight = 2
-    url = "https://gogs.glukoo.si/Glukoosi"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
