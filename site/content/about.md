@@ -2,4 +2,4 @@
 title = "About"
 +++
 
-Trainee at F-secure 2019-05-01 ->
+Junior Developer at F-secure 2020-05-01 ->
