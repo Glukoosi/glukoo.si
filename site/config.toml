@@ -45,12 +45,6 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-telegram fa-2x"
     weight = 3
     url = "https://t.me/Glukoosi"
-[[params.social]]
-    name = "IRC"
-    icon = "fas fa-hashtag a-2x"
-    weight = 4
-    url = "irc://Glukoosi@IRCnet"
-
 
 # Menu links
 [[menu.main]]
