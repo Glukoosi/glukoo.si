@@ -2,4 +2,4 @@
 title = "About"
 +++
 
-Developer at F-Secure 2021-05-01 ->
+Developer at Buutti 2022-05-23 ->
